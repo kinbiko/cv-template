@@ -1,0 +1,23 @@
+name: Generate CV as a PDF
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  publish:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v2
+
+      - name: Run Pandoc
+        uses: docker://pandoc/latex:2.16
+        with:
+          args: "-V geometry:margin=3cm -V colorlinks cv.md -s -o cv.pdf"
+
+      - name: Update the release with the PDF
+        uses: softprops/action-gh-release@v1
+        with:
+          files: cv.pdf
