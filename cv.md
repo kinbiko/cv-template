@@ -62,6 +62,6 @@ but make sure you hit buzzwords that an automated system might look for for the 
 - $SIMILAR_SKILLS_RELEVANT_TO_THE_POSITION_HERE
 - Languages: $HUMAN_LANGUAGE_LIST_HERE <!-- If at least bilingual, delete if you only speak English -->
 
-[linkedin]: https://www.linkedin.com/in/---
-[github]: https://github.com/---
-[$OTHER_ONLINE_PRESENCES_HERE]: https://---
+[linkedin]: https://www.linkedin.com/in/$LINKEDIN_PROFILE_ID_HERE
+[github]: https://github.com/$GITHUB_ID_HERE
+[$OTHER_ONLINE_PRESENCES_HERE]: https://$OTHER_ONLINE_PRESENCE_URL_HERE
