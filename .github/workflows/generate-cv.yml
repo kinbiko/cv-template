@@ -1,5 +1,8 @@
 name: Generate CV as a PDF
 
+permissions:
+  contents: write
+
 on:
   push:
     tags:
@@ -7,10 +10,10 @@ on:
 
 jobs:
   publish:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Run Pandoc
         uses: docker://pandoc/latex:2.16
