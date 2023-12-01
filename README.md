@@ -10,3 +10,5 @@ Opinionated CV generator based on an easy-to-maintain Markdown document.
 - Push the tag to GitHub and trigger the GitHub Actions `Generate CV as PDF` workflow with `git push --tags`
 
 The [most recent tag](../../releases) will then contain the generated PDF after the workflow finishes executing.
+
+![screenshot](screenshot.jpg)
